@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+
+
+.calculator-grid{
+    background-color: lightgray;
+    padding: 10px 10px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.row button{
+    width: 40px;
+    height: 25px;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    border: none;
+    outline: none;
+    margin: 5px 5px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row button:hover{
+
+    background-color: rgb(24, 22, 22);
+}
+
+.num-pad{
+    display: grid;
+    padding: 10px 10px;;
+}
+
+.row-nums button{
+    height: 35px;
+    width: 45px;
+    margin: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: lightslategray;
+    cursor: pointer;
+}
+
+.row-nums button:hover{
+    background-color: rgb(108, 123, 138);
+}
+
+#red-button{
+    background-color: rgb(226, 59, 59);
+}
+
+#red-button:hover{
+    background-color: rgb(204, 54, 54);
+}
+
+.output{
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 10px;
+    min-height: 5vh;
+    min-width: 15vw;
+    margin: 10px 10px;
+}
+
+.output .previous-operand{
+    margin: 5px 5px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+
+.output .current-operand{
+    margin: 5px 5px;
+    color: white;
+    font-size: 2rem;
+}
+
+
+
